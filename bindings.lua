@@ -58,6 +58,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "d", function ()
                                    awful.util.spawn('dmenu_run') end),
 
+    awful.key({ "Shift", "Control" },"f", function ()
+                                   awful.util.spawn('/home/feofan/find-window.sh') end),
+
+
     awful.key({ "Shift", "Control" },"z", function ()
                                    awful.util.spawn('firefox-aurora') end),
     awful.key({ "Shift", "Control" },"x", function ()
