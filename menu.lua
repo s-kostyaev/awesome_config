@@ -12,7 +12,10 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
+xdg_menu = require("archmenu")
+
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "Applications", xdgmenu },
                                     { "open terminal", terminal }
                                   }
                         })

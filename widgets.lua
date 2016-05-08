@@ -119,5 +119,8 @@ for s = 1, screen.count() do
     layout:set_right(right_layout)
 
     mywibox[s]:set_widget(layout)
+    mywibox[s]:connect_signal("button::press", function()
+                                 mymainmenu:hide()
+                             end)
 end
 -- }}}
