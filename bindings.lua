@@ -73,6 +73,11 @@ globalkeys = awful.util.table.join(
     awful.key({ "Shift", "Control" },"l", function ()
                                    awful.util.spawn("i3lock -c 000000") end),
 
+    awful.key({  modkey,           },"F2", function ()
+                                   awful.util.spawn("compton --backend xrender --no-fading-openclose --vsync drm --paint-on-overlay") end),
+    awful.key({  modkey,           },"F3", function ()
+                                   awful.util.spawn("killall -9 compton") end),
+
     -- Volume
     awful.key({ "Shift", "Control" },"m", function ()
           awful.util.spawn('pamixer --toggle-mute') end),
