@@ -64,7 +64,7 @@ globalkeys = awful.util.table.join(
 
 
     awful.key({ "Shift", "Control" },"z", function ()
-                                   awful.util.spawn('firefox-aurora') end),
+                                   awful.util.spawn('firefox') end),
     awful.key({ "Shift", "Control" },"x", function ()
                                    awful.util.spawn('emacsclient -c -a ""') end),
     awful.key({ "Shift", "Control" },"c", function ()
