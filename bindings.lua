@@ -61,6 +61,8 @@ globalkeys = awful.util.table.join(
 
     awful.key({ "Shift", "Control" },"f", function ()
                                    awful.util.spawn('/home/feofan/find-window.sh') end),
+    awful.key({ modkey,            },"t", function ()
+                                   awful.util.spawn('/home/feofan/trans.sh') end),
 
 
     awful.key({ "Shift", "Control" },"z", function ()
