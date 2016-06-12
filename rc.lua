@@ -39,7 +39,7 @@ end
 beautiful.init("~/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm -e tmux"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "emacsclient"
 editor_cmd = terminal .. " -e " .. editor
 
