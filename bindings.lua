@@ -76,7 +76,7 @@ globalkeys = awful.util.table.join(
                                    awful.util.spawn("i3lock -c 000000") end),
 
     awful.key({  modkey,           },"F2", function ()
-                                   awful.util.spawn("compton --backend xrender --no-fading-openclose --vsync drm --paint-on-overlay") end),
+                                   awful.util.spawn("compton --backend xrender --no-fading-openclose --vsync drm --paint-on-overlay -i 0") end),
     awful.key({  modkey,           },"F3", function ()
                                    awful.util.spawn("killall -9 compton") end),
 
