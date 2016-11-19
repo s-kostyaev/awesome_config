@@ -38,6 +38,8 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("~/.config/awesome/theme.lua")
 
+awful.util.spawn_with_shell("~/.xsessionrc")
+
 -- This is used later as the default terminal and editor to run.
 terminal = "termite"
 editor = os.getenv("EDITOR") or "emacsclient"

@@ -105,8 +105,8 @@ for s = 1, screen.count() do
 
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
-    right_layout:add(wifiwidget)
-    right_layout:add(volwidget)
+    -- right_layout:add(wifiwidget)
+    -- right_layout:add(volwidget)
     right_layout:add(fswidget)
     right_layout:add(batwidget)
     right_layout:add(mytextclock)
